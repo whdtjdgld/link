@@ -1,0 +1,264 @@
+
+
+p {
+	margin-bottom: 22px;
+	font-family: "Do Hyeon";
+	font-size:14px;
+	line-height: 25px;
+	color: #727272;
+	font-weight: 400;
+}
+a {
+	color:#4D4D4D;
+	background:none;
+	text-decoration: none;
+	outline: none;
+}
+
+.s1{
+    background-color: none;
+    position: absolute;
+    top:25px;
+    right:180px;
+}
+.s2{
+    background-color: none;
+    position: absolute;
+    top:25px;
+    right:115px;
+}
+.s3{
+    background-color: none;
+    position: absolute;
+    top:25px;
+    right:40px;
+}
+
+.s4{
+    background-color: none;
+    position: absolute;
+    top:25px;
+    right:40px;
+    font-weight: bold;
+}
+
+
+/*-----------------------------------------------------------------*/
+/* 메인화면 글자 조정
+/*-----------------------------------------------------------------*/
+
+.centered {
+  text-align: center;
+  font-size: 40px;
+  color: #4D4D4D;
+  position:absolute;
+  width: 500px;
+  left: 50%;
+  margin-left:-225px;
+  top:150px;  
+}
+
+.centered2 {
+  font-size: 25px;
+  color: #4D4D4D;
+  position:absolute;
+  width: 500px;
+  left: 50%;
+  margin-left:-225px;
+  top:150px;
+}
+
+.choose1 {
+  text-align: center;
+  font-size: 20px;
+  color: #4D4D4D;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  margin-left:-225px;
+}
+
+.choose2 {
+  text-align: center;
+  font-size: 15px;
+  color: #4D4D4D;
+  position: absolute;
+  width: auto;
+  top: 450px;
+  left:500px;
+}
+
+.search {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    border-top-left-radius:6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius: 6px;
+    margin-right:5px;
+    border: 6px solid #5193F0;
+    margin-left:-225px;
+}
+
+
+body{
+    font-family: "Do Hyeon";
+    font-size: 13px
+    }
+
+div{
+    height: 40px;
+    width: 490px;
+    }
+
+input{
+    font-size: 16px;
+    width: 400px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    float: left;
+}
+
+button{
+    width:50px;
+    height: 100%;
+    border: solid #5193F0;
+    background: #5193F0;
+    outline: none;
+    float: right;
+    color: #ffffff
+}
+
+/*-----------------------------------------------------------------*/
+/* 회원가입 페이지
+/*-----------------------------------------------------------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family:"Do Hyeon";
+  
+  }
+  
+  body {
+    background-image:#34495e;
+  }
+  
+  .joinForm {
+    position:absolute;
+    width:500px;
+    padding: 30px, 20px;
+    background-color: #ffffff;
+    text-align:center;
+    top:550px;
+    height: 680px;
+    left:51%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+  }
+  
+  .joinForm h2 {
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .textForm {
+    border: 3px solid #5193F0;
+    border-top-left-radius:6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius: 6px;
+    top: 30%;
+    left:50%;
+    width:80%;
+    margin: 30px;
+    padding: 10px 10px;
+  }
+  
+  
+  .id {
+    width: 80%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .pw {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .name {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .email {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .nickname {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  
+  .btn {
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width:80%;
+    height:40px;
+    background: #5193F0;
+    border-top-left-radius:6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius: 6px;
+    background-position: left;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display: inside;
+  }
+  
+  .btn:hover {
+    background-position: right;
+  }
+
+  .subck{
+    position: relative;
+    width: 1470px;
+    height: 1000px;  
+    background:#F4F4F4
+  }
