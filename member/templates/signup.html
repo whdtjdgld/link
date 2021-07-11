@@ -1,77 +1,28 @@
-<!doctype html>
-
-<html lang="kr-gb" class="no-js">
-    <head>
-    
-    <meta charset="utf-8">
-	<title>링커</title>
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">	
-
-    <!--Styles-->
-    <link href=static/style.css>
-    <link href=static/font.css>
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-
-    <style type="text/css">
-        @font-face {
-        font-family: 'Do Hyeon', sans-serif;
-        src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap') format("woff2");
-        font-weight: normal;
-        font-style: normal;
-        }
-    </style>
-    </head>
-    <body>
-
-    <!--Start Logo -->
-    <a href="main">
-        <img 
-        src="static/images/linker-logo.png" alt="logo here"
-        style="position:relative; width:100px; height:90px; top:-1.3em; left: 1em;"
-        />
-        <img    
-        src="static/images/bar.png" alt="bar here"
-        style="position:relative; width:1490px; height:3px; top:-3em; left: -3em;"
-        />
-    </a>
-    <!--End Logo-->  
-
-    <!--상단바-->
-
-    <span class='s1'><a href="/profile">내 프로필 등록하기</a></span>
-
-    <span class='s2'><a href="/login">로그인</a></span>
-    
+{% extends "base.html" %}
+{% block content %}
     <span class='s4'><a href="/signup">회원가입</a></span>
     
     <!--입력창-->
-
+    
     <div class="subck"></div>
     <div class="centered2">당신의 아이디어를 실현시켜 보세요</div>
 
     <form action="doJoin" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this); return false;">
-                                                                                                
-        <div class="textForm">
-          <input name="loginId" type="text" class="id" placeholder="아이디">
-          </input>
-        </div>
-        <div class="textForm">
-          <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
-        </div>
-         <div class="textForm">
-          <input name="loginPwConfirm" type="password" class="pw" placeholder="비밀번호 확인">
-        </div>
         <div class="textForm">
           <input name="name" type="text" class="name" placeholder="이름">
-        </div>
-         <div class="textForm">
-          <input name="email" type="text" class="email" placeholder="이메일">
         </div>
         <div class="textForm">
           <input name="nickname" type="text" class="nickname" placeholder="닉네임">
         </div>
+        <div class="textForm">
+          <input name="email" type="text" class="email" placeholder="이메일">
+        </div>                                                     
+        <div class="textForm">
+          <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
+        </div>
+        <div class="textForm">
+          <input name="loginPwConfirm" type="password" class="pw" placeholder="비밀번호 확인">
+        </div>
         <input type="submit" class="btn" value="회원가입"/>
-      </form>
-  </body>
+    </form>
+{% endblock %}

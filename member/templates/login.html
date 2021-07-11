@@ -1,60 +1,31 @@
-<!doctype html>
-
-<html lang="kr-gb" class="no-js">
-    <head>
+{% extends "base.html" %}
+{% block content %}
+    <span class='s5'><a href="/login">로그인</a></span>
     
-    <meta charset="utf-8">
-	<title>링커</title>
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">	
-
-    <!--Styles-->
-    <link href=static/style.css>
-    <link href=static/font.css>
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-
-    <style type="text/css">
-        @font-face {
-        font-family: 'Do Hyeon', sans-serif;``
-        src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap') format("woff2");
-        font-weight: normal;
-        font-style: normal;
-        }
-    </style>
-    </head>
+    <!--main-->
     <body>
-
-    <!--Start Logo -->
-    <a href="main">
-        <img 
-        src="static/images/linker-logo.png" alt="logo here"
-        style="position:relative; width:100px; height:90px; top:-1.3em; left: 1em; background-color: none;"
-        />
-        <img    
-        src="static/images/bar.png" alt="bar here"
-        style="position:relative; width:1490px; height:3px; top:-3em; left: -3em;"
-        />
-    </a>
-    <!--End Logo-->  
-
-
-
-    <!--상단바-->
-
-    <span class='s1'><a href="/profile">내 프로필 등록하기</a></span>
-
-    <span class='s2'><a href="/login">로그인</a></span>
-
-    <span class='s3'><a href="/signup">회원가입</a></span>
-
-
-
-
-    <!--Main-->
-        <h1>로그인창</h1>
-     
-    </body>
-    
-         
-
+        <div class="joinForm">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                <div id="first">
+                    <div class="myform form ">
+                    <form action="" method="post" name="login">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">이메일</label>
+                                <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@linker.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">비밀번호</label>
+                                <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="비밀번호를 입력해주세요.">
+                            </div>
+                            <div class="form-group">
+                                <a class="text-center" href="#">비밀번호 찾기</a>
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">이메일로 로그인</button>
+                            </div>
+                            <div class="form-group">
+                                <a class="text-center" href="signup" id="signup">계정이 없으신가요?</a>
+                            </div>
+    </div>
+{% endblock %}
