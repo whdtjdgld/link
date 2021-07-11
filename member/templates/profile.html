@@ -1,51 +1,24 @@
-<!doctype html>
-
-<html lang="kr-gb" class="no-js">
-    <head>
+{% extends "base.html" %}
+{% block content %}
+    <span class='s4'><a href="/profile">회원가입</a></span>
     
-    <meta charset="utf-8">
-	<title>링커</title>
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">	
+    <!--입력창-->
+    
+    <div class="subck"></div>
+    <div class="centered2">1. 희망하는 프로젝트를 골라주세요.</div>
 
-    <!--Styles-->
-    <link href=static/style.css>
-    <link href=static/font.css>
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-
-    <style type="text/css">
-        @font-face {
-        font-family: 'Do Hyeon', sans-serif;
-        src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap') format("woff2");
-        font-weight: normal;
-        font-style: normal;
-        }
-    </style>
-    </head>
-    <body>
-
-    <!--Start Logo -->
-    <a href="main">
-        <img 
-        src="static/images/linker-logo.png" alt="logo here"
-        style="position:relative; width:100px; height:90px; top:-1.3em; left: 1em;"
-        />
-        <img    
-        src="static/images/bar.png" alt="bar here"
-        style="position:relative; width:1490px; height:3px; top:-3em; left: -3em;"
-        />
-    </a>
-    <!--End Logo-->  
-
-    <!--상단바-->
-
-    <span class='s1'><a href="/profile">내 프로필 등록하기</a></span>
-
-    <span class='s2'><a href="/login">로그인</a></span>
-
-    <span class='s3'><a href="/signup">회원가입</a></span>
-    <!---->
-    <h1>프로필등록</h1>
-
-    </body>
+    <form action="doJoin" method="POST" class="profileForm" onsubmit="DoJoinForm__submit(this); return false;">
+        
+        <label><input type="checkbox" name="color" value="공모전">공모전</label>
+        <label><input type="checkbox" name="color" value="대외활동">대외활동</label>
+        <label><input type="checkbox" name="color" value="동아리">동아리</label>
+        <label><input type="checkbox" name="color" value="교내 장학 프로그램">교내 장학 프로그램</label>
+        <label><input type="checkbox" name="color" value="교외 장학 프로그램">교외 장학 프로그램</label>
+        <p><input type="button" class="btn2" value="이전" onClick="history.go(-1)"></p>
+        <p><input type="submit" class="btn" value="다음"></p>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:12.50%">
+            </div>
+            </div>
+    </form>
+{% endblock %}
