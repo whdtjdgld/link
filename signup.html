@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+    <!--입력창-->
+    
+    <div class="subck"></div>
+    <div class="centered2">당신의 아이디어를 실현시켜 보세요</div>
+
+    <form class="joinForm" name="join" method="POST" action="">
+      {% csrf_token %}
+        <div>
+          <label class="control-label" for="signupName">이름</label>
+          <input class="input_form" id="signupName" name="name" type="text" placeholder="  이름">
+        </div>
+        <div class="form_text_alert_padding">
+          <div id="alert_name" class="form_text_alert"></div>
+        </div>
+        <div>
+          <input class="input_form" name="nickname" type="text" placeholder="  닉네임">
+        </div>
+        <div class="form_text_alert_padding">
+          <div id="alert_nickname" class="form_text_alert"></div>
+        </div>
+        <div>
+          <input class="input_form"  name="email" type="email" placeholder="  이메일">
+        </div>
+        <div class="form_text_alert_padding">
+          <div id="alert_email" class="form_text_alert"></div>
+        </div>                                               
+        <div>
+          <input class="input_form"  name="loginPw" type="password" placeholder="  비밀번호">
+        </div>
+        <div class="form_text_alert_padding">
+          <div id="alert_login" class="form_text_alert"></div>
+        </div>
+        <input type="submit" class="btn" value="회원가입">
+    </form>
+{% endblock %}
