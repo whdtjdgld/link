@@ -8,6 +8,7 @@ p {
 	color: #727272;
 	font-weight: 400;
 }
+
 a {
 	color:#4D4D4D;
 	background:none;
@@ -42,6 +43,22 @@ a {
     font-weight: bold;
 }
 
+.s5{
+  background-color: none;
+  position: absolute;
+  top:25px;
+  right:115px;
+  font-weight: bold;
+}
+
+.s6{
+  background-color: none;
+  position: absolute;
+  top:25px;
+  right:180px;
+  font-weight: bold;
+}
+
 
 /*-----------------------------------------------------------------*/
 /* 메인화면 글자 조정
@@ -64,7 +81,7 @@ a {
   position:absolute;
   width: 500px;
   left: 50%;
-  margin-left:-225px;
+  margin-left:-180px;
   top:150px;
 }
 
@@ -83,9 +100,10 @@ a {
   font-size: 15px;
   color: #4D4D4D;
   position: absolute;
-  width: auto;
+  width: 650px;
   top: 450px;
-  left:500px;
+  left:50%;
+  margin-left:-300px;
 }
 
 .search {
@@ -149,15 +167,15 @@ button{
   
   .joinForm {
     position:absolute;
-    width:500px;
+    width:400px;
     padding: 30px, 20px;
     background-color: #ffffff;
     text-align:center;
-    top:550px;
-    height: 680px;
+    top:500px;
+    height: 600px;
     left:51%;
     transform: translate(-50%,-50%);
-    border-radius: 15px;
+    border-radius: 30px;
   }
   
   .joinForm h2 {
@@ -177,8 +195,7 @@ button{
     margin: 30px;
     padding: 10px 10px;
   }
-  
-  
+
   .id {
     width: 80%;
     border:none;
@@ -229,7 +246,6 @@ button{
     background: none;
   }
   
-  
   .btn {
     position:relative;
     left:50%;
@@ -251,14 +267,114 @@ button{
     transition: 0.4s;
     display: inside;
   }
+
+  .btn2 {
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width:80%;
+    height:40px;
+    background: #ffffff;
+    border-top-left-radius:6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius: 6px;
+    background-position: left;
+    background-size: 200%;
+    color:#5193F0;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display: inside;
+    border: 1px solid #5193F0;
+  }
   
   .btn:hover {
     background-position: right;
   }
 
   .subck{
-    position: relative;
-    width: 1470px;
-    height: 1000px;  
-    background:#F4F4F4
+    position: auto;
+    width: 1920px;
+    height: 830px;  
+    background-color:#F4F4F4
   }
+
+/*-----------------------------------------------------------------*/
+/* 로그인 페이지
+/*-----------------------------------------------------------------*/
+
+  .loginForm {
+    position:absolute;
+    width:500px;
+    padding: 30px, 20px;
+    background-color: #ffffff;
+    text-align:center;
+    top:550px;
+    height: 680px;
+    left:51%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+  }
+
+  .tx-tfm{
+    text-transform:uppercase;
+  }
+
+  .mybtn{
+    border-radius:50px;
+  }
+
+  .login-or {
+    position: relative;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+  }
+
+  .hr-or {
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  form .error {
+    color: #ff0000;
+  }
+
+  #second{
+    display:none;
+  }
+
+
+/*-----------------------------------------------------------------*/
+/* 프로필 작성 페이지
+/*-----------------------------------------------------------------*/
+
+.profileForm {
+  position:absolute;
+  width:500px;
+  padding: 30px, 20px;
+  background-color: #ffffff;
+  text-align:center;
+  top:550px;
+  height: 680px;
+  left:51%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+}
