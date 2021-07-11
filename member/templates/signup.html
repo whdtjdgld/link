@@ -8,7 +8,8 @@
     <form class="joinForm" name="join" method="POST" action="">
       {% csrf_token %}
         <div>
-          <input class="input_form" name="name" type="text" placeholder="  이름">
+          <label class="control-label" for="signupName">이름</label>
+          <input class="input_form" id="signupName" name="name" type="text" placeholder="  이름">
         </div>
         <div class="form_text_alert_padding">
           <div id="alert_name" class="form_text_alert"></div>
