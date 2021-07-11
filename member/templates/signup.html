@@ -1,28 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
-    <span class='s4'><a href="/signup">회원가입</a></span>
-    
     <!--입력창-->
     
     <div class="subck"></div>
     <div class="centered2">당신의 아이디어를 실현시켜 보세요</div>
 
-    <form action="doJoin" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this); return false;">
-        <div class="textForm">
-          <input name="name" type="text" class="name" placeholder="이름">
+    <form class="joinForm" name="join" method="POST" action="">
+      {% csrf_token %}
+        <div>
+          <input class="input_form" name="name" type="text" placeholder="  이름">
         </div>
-        <div class="textForm">
-          <input name="nickname" type="text" class="nickname" placeholder="닉네임">
+        <div class="form_text_alert_padding">
+          <div id="alert_name" class="form_text_alert"></div>
         </div>
-        <div class="textForm">
-          <input name="email" type="text" class="email" placeholder="이메일">
-        </div>                                                     
-        <div class="textForm">
-          <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
+        <div>
+          <input class="input_form" name="nickname" type="text" placeholder="  닉네임">
         </div>
-        <div class="textForm">
-          <input name="loginPwConfirm" type="password" class="pw" placeholder="비밀번호 확인">
+        <div class="form_text_alert_padding">
+          <div id="alert_nickname" class="form_text_alert"></div>
         </div>
-        <input type="submit" class="btn" value="회원가입"/>
+        <div>
+          <input class="input_form"  name="email" type="email" placeholder="  이메일">
+        </div>
+        <div class="form_text_alert_padding">
+          <div id="alert_email" class="form_text_alert"></div>
+        </div>                                               
+        <div>
+          <input class="input_form"  name="loginPw" type="password" placeholder="  비밀번호">
+        </div>
+        <div class="form_text_alert_padding">
+          <div id="alert_login" class="form_text_alert"></div>
+        </div>
+        <input type="submit" class="btn" value="회원가입">
     </form>
 {% endblock %}

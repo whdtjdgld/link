@@ -76,12 +76,13 @@ a {
 }
 
 .centered2 {
+  text-align: center;
   font-size: 25px;
   color: #4D4D4D;
   position:absolute;
   width: 500px;
   left: 50%;
-  margin-left:-180px;
+  margin-left:-225px;
   top:150px;
 }
 
@@ -125,18 +126,26 @@ body{
     font-size: 13px
     }
 
-div{
+/* div{
     height: 40px;
     width: 490px;
-    }
+    } */
 
 input{
-    font-size: 16px;
+    font-size: 20px;
     width: 400px;
-    padding: 10px;
     border: none;
     outline: none;
     float: left;
+}
+
+.input_form{
+  text-align: left;
+  border: 3px solid #5193F0;
+  margin-top: 7%;
+  margin-left:10%;
+  width:320px;
+  height: 50px;
 }
 
 button{
@@ -171,12 +180,14 @@ button{
     padding: 30px, 20px;
     background-color: #ffffff;
     text-align:center;
-    top:500px;
-    height: 600px;
-    left:51%;
+    top:420px;
+    /* height: 600px; */
+    left:52%;
     transform: translate(-50%,-50%);
     border-radius: 30px;
   }
+
+
   
   .joinForm h2 {
     text-align: center;
@@ -185,72 +196,29 @@ button{
   
   .textForm {
     border: 3px solid #5193F0;
-    border-top-left-radius:6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius:6px;
-    border-bottom-right-radius: 6px;
     top: 30%;
     left:50%;
     width:80%;
     margin: 30px;
-    padding: 10px 10px;
   }
 
-  .id {
-    width: 80%;
-    border:none;
-    outline:none;
-    color: #636e72;
-    font-size:16px;
-    height:25px;
-    background: none;
-  }
-  
-  .pw {
-    width: 100%;
-    border:none;
-    outline:none;
-    color: #636e72;
-    font-size:16px;
-    height:25px;
-    background: none;
-  }
-  
-  .name {
-    width: 100%;
-    border:none;
-    outline:none;
-    color: #636e72;
-    font-size:16px;
-    height:25px;
-    background: none;
-  }
-  
-  .email {
-    width: 100%;
-    border:none;
-    outline:none;
-    color: #636e72;
-    font-size:16px;
-    height:25px;
-    background: none;
-  }
-  
-  .nickname {
-    width: 100%;
-    border:none;
-    outline:none;
-    color: #636e72;
-    font-size:16px;
-    height:25px;
-    background: none;
-  }
-  
+.form_text_alert_padding{
+  padding-bottom: 30px;
+}
+
+.form_text_alert{
+  text-align: left;
+  margin-right: 180px;
+  margin-left: 40px;
+  height: 20px;
+  width:300px;
+  color: #ff0000;
+}
   .btn {
     position:relative;
-    left:50%;
+    left:47%;
     transform: translateX(-50%);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width:80%;
     height:40px;
     background: #5193F0;
@@ -261,6 +229,28 @@ button{
     background-position: left;
     background-size: 200%;
     color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display: inside;
+  }
+
+  .anbtn {
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    width:80%;
+    height:40px;
+    background: #ffffff;
+    border-top-left-radius:6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius: 6px;
+    background-position: left;
+    background-size: 200%;
+    color:rgb(131, 126, 126);
     font-weight: bold;
     border:none;
     cursor:pointer;
@@ -296,10 +286,11 @@ button{
   }
 
   .subck{
-    position: auto;
-    width: 1920px;
-    height: 830px;  
-    background-color:#F4F4F4
+    position: absolute;
+    top:65px;
+    width: 100%;
+    height: 100%;
+    background-color:#dadada
   }
 
 /*-----------------------------------------------------------------*/
@@ -308,15 +299,15 @@ button{
 
   .loginForm {
     position:absolute;
-    width:500px;
+    width:400px;
     padding: 30px, 20px;
     background-color: #ffffff;
     text-align:center;
-    top:550px;
-    height: 680px;
-    left:51%;
+    top:400px;
+    /* height: 600px; */
+    left:52%;
     transform: translate(-50%,-50%);
-    border-radius: 15px;
+    border-radius: 30px;
   }
 
   .tx-tfm{
