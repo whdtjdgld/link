@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 {% block content %}
     <span class='s6'><a href="/profile">내 프로필 등록하기</a></span>
@@ -32,4 +33,40 @@
         <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:12.5%"></div>
     </div>
     
+=======
+{% extends "base.html" %}
+{% block content %}
+    <span class='s6'><a href="/profile">내 프로필 등록하기</a></span>
+    
+    <!--입력창-->
+    
+    <div class="subck"></div>
+    <div class="centered2">1. 희망하는 프로젝트를 골라주세요.</div>
+
+    <form action="doJoin" method="POST" class="profileForm" onsubmit="DoJoinForm__submit(this); return false;">
+        <div class="profile">
+        <input type="checkbox" id="cb1">
+        <label for="cb1">공모전</label><br><br>
+        <input type="checkbox" id="cb2">
+        <label for="cb2">대외활동</label><br><br>
+        <input type="checkbox" id="cb3">
+        <label for="cb3">동아리</label><br><br>
+        <input type="checkbox" id="cb4">
+        <label for="cb4">교내 장학 프로그램</label><br><br>
+        <input type="checkbox" id="cb5">
+        <label for="cb5">교외 장학 프로그램</label><br><br>
+        <input type="checkbox" id="cb6">
+        <label for="cb6">스터디</label><br><br>
+        <input type="checkbox" id="cb7">
+        <label for="cb7">스타트업</label>
+        </div>
+    </form>
+    <p>*복수 선택 가능합니다.</p>
+    <input type="button" class="btn2a" value="이전" onClick="history.go(-1)">
+    <input type="submit" class="btna" value="다음" onClick="location='q2'">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:12.5%"></div>
+    </div>
+    
+>>>>>>> 30e72c538af602b5a4472351fc431b15c531e096
 {% endblock %}
