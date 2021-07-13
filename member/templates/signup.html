@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+    <span class='s4'><a href="/profile">회원가입</a></span>
     <!--입력창-->
     
     <div class="subck"></div>
@@ -8,25 +9,29 @@
     <form class="joinForm" name="join" method="POST" action="">
       {% csrf_token %}
         <div>
-          <label class="control-label" for="signupName">이름</label>
+          <div>
+          <p class="form_item_name" style="text-align:left">이름</p>
           <input class="input_form" id="signupName" name="name" type="text" placeholder="  이름">
         </div>
         <div class="form_text_alert_padding">
           <div id="alert_name" class="form_text_alert"></div>
         </div>
         <div>
+          <p class="form_item_name" style="text-align:left">닉네임</p>
           <input class="input_form" name="nickname" type="text" placeholder="  닉네임">
         </div>
         <div class="form_text_alert_padding">
           <div id="alert_nickname" class="form_text_alert"></div>
         </div>
         <div>
+          <p class="form_item_name" style="text-align:left">이메일</p>
           <input class="input_form"  name="email" type="email" placeholder="  이메일">
         </div>
         <div class="form_text_alert_padding">
           <div id="alert_email" class="form_text_alert"></div>
         </div>                                               
         <div>
+          <p class="form_item_name" style="text-align:left">비밀번호</p>
           <input class="input_form"  name="loginPw" type="password" placeholder="  비밀번호">
         </div>
         <div class="form_text_alert_padding">
