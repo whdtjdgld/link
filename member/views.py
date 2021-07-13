@@ -25,4 +25,18 @@ def signup(request):
     template = loader.get_template( "signup.html" )
     context ={}
     return HttpResponse( template.render( context, request ) )
-    
+
+def q2(request):
+    template = loader.get_template( "q2.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def q3(request):
+    template = loader.get_template( "q3.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def q4(request):
+    template = loader.get_template( "q4.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
