@@ -9070,4 +9070,13 @@ a.text-dark:focus,a.text-dark:hover {
     }
 }
 
+.form_item_name{
+    margin-bottom: 0;
+	font-family: "Do Hyeon";
+	font-size:14px;
+	line-height: 25px;
+	color: #727272;
+	font-weight: 400;
+}
+
 /*# sourceMappingURL=bootstrap.min.css.map */
