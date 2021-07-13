@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+    <span class='s6'><a href="/profile">내 프로필 등록하기</a></span>
+    
+    <!--입력창-->
+    
+    <div class="subck"></div>
+    <div class="centered2">3. 성별</div>
+
+    <form action="doJoin" method="POST" class="profileForm" onsubmit="DoJoinForm__submit(this); return false;">
+        <div class="profile">
+        <input type="checkbox" id="cb1">
+        <label for="cb1">남성</label><br><br>
+        <input type="checkbox" id="cb2">
+        <label for="cb2">여성</label>
+        </div>
+    </form>
+    <input type="button" class="btn2a" value="이전" onClick="history.go(-1)">
+    <input type="submit" class="btna" value="다음" onClick="location='q4'">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:12.5%"></div>
+    </div>
+    
+{% endblock %}

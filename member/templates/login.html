@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+    <span class='s5'><a href="/login">로그인</a></span>
     <!--입력창-->
     
     <div class="subck"></div>
@@ -8,18 +9,20 @@
     <form class="loginForm" name="login" method="POST" action="">
       {% csrf_token %}
         <div>
-          <input class="input_form" name="id" type="text" placeholder="  example@linker.com">
+        <p class="form_item_name" style="text-align:left">이메일</p>
+          <input class="input_form" name="id" type="text" placeholder="example@linker.com">
         </div>
         <div class="form_text_alert_padding">
           <div id="alert_id" class="form_text_alert"></div>
-        </div><br>
+        </div>
         <div>
-          <input class="input_form" name="password" type="text" placeholder="  비밀번호를 입력해주세요.">
+        <p class="form_item_name" style="text-align:left">비밀번호</p>
+          <input class="input_form" name="password" type="text" placeholder="비밀번호를 입력해주세요.">
         </div>
         <div class="form_text_alert_padding">
           <div id="alert_pwd" class="form_text_alert"></div>
         </div>
-        <br><br><br><br>
+        <br>
         <div>
         <a href="#비밀번호찾기">비밀번호 찾기</a>
         </div>

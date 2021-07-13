@@ -219,7 +219,6 @@ th {
 
 label {
     display: inline-block;
-    margin-bottom: .5rem
 }
 
 button {
@@ -2503,11 +2502,16 @@ select.form-control:focus::-ms-value {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
+    border: 1px solid #5193F0;
+    background-color: #5193F0;
+    color: #ffffff;
+    /* padding: .375rem .75rem; */
     font-size: 1rem;
-    margin-top: 8%;
-    margin-left: 3%;
+    width: 320px;
+    height: 40px;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-bottom: 5%;
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
@@ -9069,6 +9073,16 @@ a.text-dark:focus,a.text-dark:hover {
     .table-bordered td,.table-bordered th {
         border: 1px solid #ddd!important
     }
+}
+
+.form_item_name{
+    margin-left: 40px;
+    margin-top: 20px;
+	font-family: "Do Hyeon";
+	font-size:14px;
+	line-height: 0;
+	color: #727272;
+	font-weight: 400;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
