@@ -220,6 +220,7 @@ th {
 label {
     display: inline-block;
     font-family: "Do Hyeon";
+    color: gray;
 }
 
 button {
@@ -2048,10 +2049,10 @@ pre code {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #5193F0;
+    color: #5193F1;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #5193F0;
+    border: 1px solid #5193F1;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
@@ -2062,7 +2063,7 @@ pre code {
 }
 
 .form-control:focus {
-    color: #5193F0;
+    color: #5193F1;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
@@ -2070,27 +2071,27 @@ pre code {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #5193F0;
+    color: #5193F1;
     opacity: 1
 }
 
 .form-control::-moz-placeholder {
-    color: #5193F0;
+    color: #5193F1;
     opacity: 1
 }
 
 .form-control:-ms-input-placeholder {
-    color: #5193F0;
+    color: #5193F1;
     opacity: 1
 }
 
 .form-control::-ms-input-placeholder {
-    color: #5193F0;
+    color: #5193F1;
     opacity: 1
 }
 
 .form-control::placeholder {
-    color: #5193F0;
+    color: #5193F1;
     opacity: 1
 }
 

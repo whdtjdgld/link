@@ -1,3 +1,4 @@
+  
 @font-face {
   font-family: 'Do Hyeon';
   src: url('NanumGothic-Regular.ttf') format("truetype");
@@ -24,18 +25,21 @@ a {
     position: absolute;
     top:25px;
     right:180px;
+    font-size:13px;
 }
 .s2{
     background-color: none;
     position: absolute;
     top:25px;
     right:115px;
+    font-size:13px;
 }
 .s3{
     background-color: none;
     position: absolute;
     top:25px;
     right:40px;
+    font-size:13px;
 }
 
 .s4{
@@ -44,6 +48,7 @@ a {
     top:25px;
     right:40px;
     font-weight: bold;
+    font-size:13px;
 }
 
 .s5{
@@ -52,6 +57,7 @@ a {
   top:25px;
   right:115px;
   font-weight: bold;
+  font-size:13px;
 }
 
 .s6{
@@ -60,6 +66,7 @@ a {
   top:25px;
   right:180px;
   font-weight: bold;
+  font-size:13px;
 }
 
 
@@ -74,7 +81,7 @@ a {
   color: #4D4D4D;
   position:absolute;
   width: 500px;
-  left: 50%;
+  left: 48%;
   margin-left:-225px;
   top:150px;  
 }
@@ -98,7 +105,7 @@ a {
   color: #4D4D4D;
   position:absolute;
   width: 410px;
-  left: 35%;
+  left: 39%;
   top:50px;
 }
 
@@ -148,7 +155,7 @@ a {
   /* position:relative; */
   width:200%;
   height: 45px;
-  background: #5193F0;
+  background: #5193F1;
   border-radius: 15px;
   color:white;
   font-weight: bold;
@@ -163,9 +170,9 @@ a {
   height: 45px;
   background: #ffffff;
   border:solid;
-  border-color: #5193F0;
+  border-color: #5193F1;
   border-radius: 15px;
-  color:#5193F0;
+  color:#5193F1;
   font-weight: bold;
   left:7%;
 }
@@ -177,7 +184,7 @@ a {
   color: #4D4D4D;
   position: absolute;
   top: 300px;
-  left: 51%;
+  left: 49%;
   margin-left:-100px;
 }
 
@@ -190,13 +197,13 @@ a {
   width: 680px;
   top: 420px;
   left:50%;
-  margin-left:-300px;
+  margin-left:-350px;
 }
 
 .search {
     position: absolute;
     top: 350px;
-    left: 53%;
+    left: 50%;
     width: 500px;
     height: 48px;
     border-top-left-radius:6px;
@@ -204,7 +211,7 @@ a {
     border-bottom-left-radius:6px;
     border-bottom-right-radius: 6px;
     margin-right:5px;
-    border: 6px solid #5193F0;
+    border: 6px solid #5193F1;
     margin-left:-260px;
 }
 
@@ -224,11 +231,11 @@ a {
 }
 
 
-body{
+/* body{
     font-family: "Do Hyeon";
     font-weight: bold;
     font-size: 13px
-    }
+    } */
 
 
 input{
@@ -247,13 +254,48 @@ input{
   color: #727272;
   font-weight: bold;
 }
+
 .input_form{
   text-align: left;
   font-weight: bold;
   padding: 10px;
-  border: 3px solid #5193F0;
+  border: 3px solid #5193F1;
   margin-top: 0%;
   margin-left: 10%;
+  width:320px;
+  height: 50px;
+}
+
+.input_form2{
+  text-align: left;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #5193F1;
+  margin-top: 10%;
+  margin-left: 4.5%;
+  width: 260px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.input_form3{
+  text-align: left;
+  font-weight: bold;
+  padding: 10px;
+  border: 3px solid #5193F1;
+  margin-top: 2.5%;
+  margin-left: -5%;
+  width:320px;
+  height: 50px;
+}
+
+.input_form4{
+  text-align: left;
+  font-weight: bold;
+  padding: 10px;
+  border: 3px solid #5193F1;
+  margin-top: 10.5%;
+  margin-left: 4.5%;
   width:320px;
   height: 50px;
 }
@@ -261,8 +303,8 @@ input{
 button{
     width:50px;
     height: 100%;
-    border: solid #5193F0;
-    background: #5193F0;
+    border: solid #519310;
+    background: #5193F1;
     outline: none;
     float: right;
     color: #ffffff
@@ -287,7 +329,7 @@ button{
     background-color: #ffffff;
     text-align:center;
     top:100px;
-    left:35%;
+    left:39%;
     border-radius: 30px;
   }
 
@@ -299,7 +341,7 @@ button{
   }
   
   .textForm {
-    border: 3px solid #5193F0;
+    border: 3px solid #5193F1;
     top: 30%;
     left:50%;
     width:80%;
@@ -331,8 +373,8 @@ button{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #5193F0;
-  background-color: #5193F0;
+  border: 1px solid #5193F1;
+  background-color: #5193F1;
   color: #ffffff;
   /* padding: .375rem .75rem; */
   font-size: 1rem;
@@ -390,7 +432,7 @@ button{
     position: absolute;
     top:68px;
     width: 100%;
-    height: 700px;
+    height: 868px;
     background-color:#ececec;
     overflow: visible;
   }
@@ -419,7 +461,7 @@ button{
     height: auto;
     background-color: #ffffff;
     top:100px;
-    left:35%;
+    left:39%;
     border-radius: 30px;
   }
 
@@ -477,17 +519,45 @@ button{
   font-weight: bold;
   top:100px;
   margin-left: 2.5%;
-  left:35%;
+  left:39%;
   border-radius: 15px;
 }
 .btntool {
   position: relative;
-  width: 300px;
+  width: 250px;
   top: 120px;
-  margin-left: 9%;
-  left: 35%;
+  margin-left: 8.5%;
+  left: 39%;
   /* style="position:absolute; top:300px; left:7%;" */
 }
+
+.btntool2 {
+  position: relative;
+  width: 250px;
+  top: 341px;
+  margin-left: 8.5%;
+  left: 39%;
+  /* style="position:absolute; top:300px; left:7%;" */
+}
+
+.btntool3 {
+  position: relative;
+  width: 250px;
+  top: 471px;
+  margin-left: 8.5%;
+  left: 39%;
+  /* style="position:absolute; top:300px; left:7%;" */
+}
+
+.btntool4 {
+  position: relative;
+  width: 250px;
+  top: 100px;
+  margin-left: 8.5%;
+  left: 39%;
+  /* style="position:absolute; top:300px; left:7%;" */
+}
+
 .btn2a {
   position:relative;
   width:63px;
@@ -495,14 +565,14 @@ button{
   background: #ffffff00;
   border: solid;
   border-radius: 15px;
-  color:#5193F0;
+  color:#5193F1;
   font-weight: bold;
   }
 .btna {
     position:relative;
     width:63px;
     height: 45px;
-    background: #5193F0;
+    background: #5193F1;
     border-radius: 15px;
     color:white;
     font-weight: bold;
@@ -519,7 +589,7 @@ button{
   position: absolute;
   width: 1%;
   height: 100%;
-  background-color: #5193F0;
+  background-color: #5193F1;
 }
 
 input[type="checkbox"] {
@@ -537,7 +607,7 @@ input[type="checkbox"] + label::before {
   width: 1.5em;
   height: 1.5em;
   color: white;
-  border: 3px solid #5193F0;
+  border: 3px solid #5193F1;
   position: relative;
   top: -4px;
   text-align: left;
@@ -546,15 +616,52 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::before {
   content: "\2714";
-  background: #5193F0;
+  background: #5193F1;
   text-indent: 0.4em;
 }
 
 .profile {
+  overflow: auto;
   width: 100%;
   padding: 30px;
   margin-right: auto;
   margin-left: auto;
+  height: 310px;
+}
+
+.genprofile {
+  overflow: auto;
+  width: 100%;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 130px;
+}
+
+.ageprofile {
+  overflow: auto;
+  width: 100%;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 130px;
+}
+
+/* 스크롤바 설정*/
+.profile::-webkit-scrollbar{
+  width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+.profile::-webkit-scrollbar-thumb{
+  height: 10%;
+  background-color: #5193F1;
+  border-radius: 10px;  
+}
+
+/* 스크롤바 뒷 배경 설정*/
+.profile::-webkit-scrollbar-track{
+  background-color: #c8c8c9;
 }
 
 .ageForm {
@@ -573,7 +680,7 @@ input[type="checkbox"]:checked + label::before {
 .conmain {
   width:250px;
   height: 40px;
-  background: #5193F0;
+  background: #5193F1;
   border-radius: 15px;
   color:white;
   font-weight: bold;
@@ -607,7 +714,7 @@ input[type="checkbox"]:checked + label::before {
   background: #ffffff00;
   border: solid;
   border-radius: 15px;
-  color:#5193F0;
+  color:#5193F1;
   font-weight: bold;
   /* top:630px; */
   }

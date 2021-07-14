@@ -9,7 +9,7 @@
     position: absolute;
     width: 1%;
     height: 100%;
-    background-color: #5193F0;
+    background-color: #5193F1;
 }
 
 input[type="checkbox"] {
@@ -21,17 +21,16 @@ input[type="checkbox"] + label::before {
     content: "\a0";
     display: inline-block;
     margin: 0.1em;
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     color: white;
-    border: 2px solid #5193F0;
+    border: 3px solid #5193F1;
     position: relative;
-    top: -4px;
-    border-radius: 0.4em;   
+    top: 1px;
 }
 
 input[type="checkbox"]:checked + label::before {
     content: "\2714";
-    background: #5193F0;
+    background: #5193F1;
     text-indent: 0.4em;
 }
