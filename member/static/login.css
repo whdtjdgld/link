@@ -159,7 +159,7 @@ a {
 
 a:hover {
     color: #0056b3;
-    text-decoration: underline
+    /* text-decoration: underline */
 }
 
 a:not([href]):not([tabindex]) {
@@ -2493,30 +2493,7 @@ select.form-control:focus::-ms-value {
     }
 }
 
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid #5193F0;
-    background-color: #5193F0;
-    color: #ffffff;
-    /* padding: .375rem .75rem; */
-    font-size: 1rem;
-    width: 320px;
-    height: 40px;
-    margin-top: 4%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    line-height: 1.5;
-    border-radius: .60rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-}
+
 
 .btn:focus,.btn:hover {
     text-decoration: none
@@ -5074,7 +5051,7 @@ tbody.collapse.show {
 }
 
 .progress {
-    top: 50px;
+    /* top: 50px; */
     margin-left: -45%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9077,14 +9054,6 @@ a.text-dark:focus,a.text-dark:hover {
     }
 }
 
-.form_item_name{
-    margin-left: 40px;
-    margin-top: 20px;
-    font-family: "Do Hyeon";
-    font-size:14px;
-    line-height: 0;
-    color: #727272;
-    font-weight: 400;
-}
+
 
 /*# sourceMappingURL=bootstrap.min.css.map */

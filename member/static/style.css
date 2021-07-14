@@ -2,11 +2,12 @@
   font-family: 'Do Hyeon';
   src: url('NanumGothic-Regular.ttf') format("truetype");
   font-weight: normal;
-  font-style: normal;
+  /* font-style: normal;  */
 }
 
 p {
 	font-family: "Do Hyeon";
+  font-weight: bold;
 	font-size:14px;
 	line-height: 25px;
 	color: #727272;
@@ -14,6 +15,7 @@ p {
 }
 
 a {
+  font-weight: bold;
 	color:#4D4D4D;
 }
 
@@ -67,6 +69,7 @@ a {
 
 .centered {
   text-align: center;
+  font-weight: bold;
   font-size: 30px;
   color: #4D4D4D;
   position:absolute;
@@ -78,6 +81,7 @@ a {
 
 .centered2 {
   text-align: center;
+  font-weight: bold;
   font-size: 25px;
   color: #4D4D4D;
   position:absolute;
@@ -89,12 +93,12 @@ a {
 
 .subtitle {
   text-align: center;
-  font-size: 27px;
+  font-weight: bold;
+  font-size: 25px;
   color: #4D4D4D;
   position:absolute;
-  width: 500px;
-  left: 50%;
-  margin-left:-225px;
+  width: 410px;
+  left: 35%;
   top:50px;
 }
 
@@ -103,25 +107,71 @@ a {
   font-size: 27px;
   color: #4D4D4D;
   position:absolute;
-  width: 500px;
-  left: 50%;
-  margin-left:-225px;
-  top:300px;
+  /* width: 500px; */
+  left: 40%;
+  top:200px;
   font-weight: bold;
 }
 
-.subtitle3 {
-  text-align: center;
-  font-size: 27px;
+.conbtn {
+    position:absolute;
+    /* width: 500px; */
+    left: 40%;
+    margin-left: 2%;
+    top:350px;
+
+}
+
+.findpwtitle{
+  text-align: left;
+  font-size: 38px;
+  font-weight: bold;
   color: #4D4D4D;
   position:absolute;
-  width: 500px;
-  left: 50%;
-  margin-left:-225px;
-  top:350px;
+  width: auto;
+  left: 7%;
+  top:150px;
+}
+
+.findpwsubtitle{
+  text-align: left;
+  font-size: 17px;
+  font-weight: bold;
+  color: #4D4D4D;
+  position:relative;
+  width: auto;
+  left: 7%;
+  top:250px;
+}
+
+.findpwbtn {
+  /* position:relative; */
+  width:200%;
+  height: 45px;
+  background: #5193F0;
+  border-radius: 15px;
+  color:white;
+  font-weight: bold;
+  left:7%;
+}
+
+.findpwinput {
+  /* position:relative; */
+  padding:15px;
+  margin-bottom: 3%;
+  width:200%;
+  height: 45px;
+  background: #ffffff;
+  border:solid;
+  border-color: #5193F0;
+  border-radius: 15px;
+  color:#5193F0;
+  font-weight: bold;
+  left:7%;
 }
 
 .choose1 {
+  font-weight: bold;
   text-align: center;
   font-size: 20px;
   color: #4D4D4D;
@@ -132,6 +182,7 @@ a {
 }
 
 .choose2 {
+  font-weight: bold;
   text-align: center;
   font-size: 15px;
   color: #4D4D4D;
@@ -160,6 +211,7 @@ a {
 .searchtxt {
   margin-top: 8px;
   margin-left: 5px;
+  font-weight: bold;
 }
 
 .searchbtn {
@@ -174,13 +226,10 @@ a {
 
 body{
     font-family: "Do Hyeon";
+    font-weight: bold;
     font-size: 13px
     }
 
-/* div{
-    height: 40px;
-    width: 490px;
-    } */
 
 input{
     font-size: 20px;
@@ -189,9 +238,18 @@ input{
     outline: none;
     float: left;
 }
-
+.form_item_name{
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: "Do Hyeon";
+  font-size:14px;
+  line-height: 0;
+  color: #727272;
+  font-weight: bold;
+}
 .input_form{
   text-align: left;
+  font-weight: bold;
   padding: 10px;
   border: 3px solid #5193F0;
   margin-top: 0%;
@@ -228,10 +286,8 @@ button{
     width:400px;
     background-color: #ffffff;
     text-align:center;
-    top:350px;
-    /* height: 70%; */
-    left:52%;
-    transform: translate(-50%,-50%);
+    top:100px;
+    left:35%;
     border-radius: 30px;
   }
 
@@ -256,32 +312,42 @@ button{
 
 .form_text_alert{
   text-align: left;
+  font-weight: bold;
   margin-right: 180px;
   margin-left: 40px;
   width:300px;
   color: #ff0000;
 }
 
-.btntool {
-  width: 300px;
-  transform: translate(-50%,-50%);
-  position: absolute;
-  top: 58%;
-  left: 55%;
-  /* right: auto; */
-  /* margin-right:-225px; */
+
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #5193F0;
+  background-color: #5193F0;
+  color: #ffffff;
+  /* padding: .375rem .75rem; */
+  font-size: 1rem;
+  width: 320px;
+  height: 40px;
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  line-height: 1.5;
+  border-radius: .60rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-weight:bold;
 }
 
-.btna {
-  position:relative;
-  width:63px;
-  height: 45px;
-  background: #5193F0;
-  border-radius: 15px;
-  color:white;
-  font-weight: bold;
-  left:3%;
-}
+
 
 .anbtn {
   position:relative;
@@ -303,18 +369,7 @@ button{
   margin-left: 3%;
 }
 
-.btn2a {
-  position:relative;
-  /* left:30%; */
-  width:63px;
-  height: 45px;
-  background: #ffffff00;
-  border: solid;
-  border-radius: 15px;
-  color:#5193F0;
-  font-weight: bold;
-  /* top:630px; */
-  }
+
 
   .btn-outline-dark {
     color: #212529;
@@ -335,8 +390,9 @@ button{
     position: absolute;
     top:68px;
     width: 100%;
-    height: 110%;
-    background-color:#ececec
+    height: 700px;
+    background-color:#ececec;
+    overflow: visible;
   }
 
   .control-label {
@@ -360,13 +416,10 @@ button{
   .loginForm {
     position:absolute;
     width:400px;
-    padding: 30px, 20px;
+    height: auto;
     background-color: #ffffff;
-    text-align:center;
-    top:300px;
-    /* height: 600px; */
-    left:52%;
-    transform: translate(-50%,-50%);
+    top:100px;
+    left:35%;
     border-radius: 30px;
   }
 
@@ -418,17 +471,43 @@ button{
 /*-----------------------------------------------------------------*/
 
 .profileForm {
-  position:absolute;
+  position:relative;
   width:350px;
-  padding: 30px, 20px;
   background-color: #ffffff;
-  text-align:left;
-  top:300px;
-  left:51%;
-  transform: translate(-50%,-50%);
+  font-weight: bold;
+  top:100px;
+  margin-left: 2.5%;
+  left:35%;
   border-radius: 15px;
 }
-
+.btntool {
+  position: relative;
+  width: 300px;
+  top: 120px;
+  margin-left: 9%;
+  left: 35%;
+  /* style="position:absolute; top:300px; left:7%;" */
+}
+.btn2a {
+  position:relative;
+  width:63px;
+  height: 45px;
+  background: #ffffff00;
+  border: solid;
+  border-radius: 15px;
+  color:#5193F0;
+  font-weight: bold;
+  }
+.btna {
+    position:relative;
+    width:63px;
+    height: 45px;
+    background: #5193F0;
+    border-radius: 15px;
+    color:white;
+    font-weight: bold;
+    left:3%;
+}
 #myProgress {
   position: relative;
   width: 100%;
@@ -492,11 +571,10 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .conmain {
-  position:relative;
   width:250px;
   height: 40px;
   background: #5193F0;
-  border-radius: 6px;
+  border-radius: 15px;
   color:white;
   font-weight: bold;
   left:3%;
@@ -523,13 +601,12 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .conprofile {
-  position:relative;
   /* left:30%; */
   width:250px;
   height: 40px;
   background: #ffffff00;
   border: solid;
-  border-radius: 6px;
+  border-radius: 15px;
   color:#5193F0;
   font-weight: bold;
   /* top:630px; */

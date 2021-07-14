@@ -46,3 +46,8 @@ def q4(request):
     template = loader.get_template( "q4.html" )
     context ={}
     return HttpResponse( template.render( context, request ) )
+
+def findpw(request):
+    template = loader.get_template( "findpw.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )

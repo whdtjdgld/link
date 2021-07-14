@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <!--입력창-->
+    <div style="width:auto;, height:auto;">
+    <div class="findpwtitle">
+    잃어버리신 비밀번호를<br>
+    찾아드릴게요
+    </div>
+    <div class="findpwsubtitle">
+    계정에 연결된 이메일을 입력해주시면, 기존 비밀번호를<br>
+    이메일을 통해 알려드릴게요
+    </div>
+    <div style="position:absolute; top:300px; left:7%;">
+        <p style="font-weight:bold; text-align:left;">이메일</p>
+        <input type="text" class="findpwinput" placeholder="example@naver.com">
+        <br>
+        <input type="button" class="findpwbtn" value="인증메일 전송하기" onClick="#이메일이전송되었습니다">
+    </div>
+    </div>
+{% endblock %}
