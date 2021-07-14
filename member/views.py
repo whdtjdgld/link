@@ -26,6 +26,12 @@ def signup(request):
     context ={}
     return HttpResponse( template.render( context, request ) )
 
+@csrf_exempt
+def congrats(request):
+    template = loader.get_template( "congrats.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
 def q2(request):
     template = loader.get_template( "q2.html" )
     context ={}
