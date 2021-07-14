@@ -242,9 +242,10 @@ button{
 
 .btntool {
   width: 300px;
+  transform: translate(-50%,-50%);
   position: absolute;
-  top:500px;
-  left: 40%;
+  top:70%;
+  left: 50%;
   /* right: auto; */
   /* margin-right:-225px; */
 }
