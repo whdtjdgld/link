@@ -219,6 +219,7 @@ th {
 
 label {
     display: inline-block;
+    font-family: "Do Hyeon";
 }
 
 button {
@@ -2513,7 +2514,7 @@ select.form-control:focus::-ms-value {
     margin-left: 10%;
     margin-bottom: 5%;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: .60rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 
@@ -5073,14 +5074,15 @@ tbody.collapse.show {
 }
 
 .progress {
-    top:50px;
+    top: 50px;
+    margin-left: -45%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 1rem;
     overflow: hidden;
-    background-color: #e9ecef;
-    border-radius: .25rem;
+    background-color: #c8c8c9;
+    border-radius: .50rem;
     flex-wrap: nowrap;
     flex-direction: row;
     align-content: stretch;
@@ -9078,11 +9080,11 @@ a.text-dark:focus,a.text-dark:hover {
 .form_item_name{
     margin-left: 40px;
     margin-top: 20px;
-	font-family: "Do Hyeon";
-	font-size:14px;
-	line-height: 0;
-	color: #727272;
-	font-weight: 400;
+    font-family: "Do Hyeon";
+    font-size:14px;
+    line-height: 0;
+    color: #727272;
+    font-weight: 400;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
