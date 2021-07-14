@@ -98,6 +98,28 @@ a {
   top:50px;
 }
 
+.subtitle2 {
+  text-align: center;
+  font-size: 27px;
+  color: #4D4D4D;
+  position:absolute;
+  width: 500px;
+  left: 50%;
+  margin-left:-225px;
+  top:300px;
+  font-weight: bold;
+}
+
+.subtitle3 {
+  text-align: center;
+  font-size: 27px;
+  color: #4D4D4D;
+  position:absolute;
+  width: 500px;
+  left: 50%;
+  margin-left:-225px;
+  top:350px;
+}
 
 .choose1 {
   text-align: center;
@@ -172,8 +194,8 @@ input{
   text-align: left;
   padding: 10px;
   border: 3px solid #5193F0;
-  margin-top: 0;
-  margin-left:10%;
+  margin-top: 0%;
+  margin-left: 10%;
   width:320px;
   height: 50px;
 }
@@ -244,18 +266,18 @@ button{
   width: 300px;
   transform: translate(-50%,-50%);
   position: absolute;
-  top:70%;
-  left: 50%;
+  top: 58%;
+  left: 55%;
   /* right: auto; */
   /* margin-right:-225px; */
 }
 
 .btna {
   position:relative;
-  width:150px;
-  height: 40px;
+  width:63px;
+  height: 45px;
   background: #5193F0;
-  border-radius: 6px;
+  border-radius: 15px;
   color:white;
   font-weight: bold;
   left:3%;
@@ -284,11 +306,11 @@ button{
 .btn2a {
   position:relative;
   /* left:30%; */
-  width:150px;
-  height: 40px;
+  width:63px;
+  height: 45px;
   background: #ffffff00;
   border: solid;
-  border-radius: 6px;
+  border-radius: 15px;
   color:#5193F0;
   font-weight: bold;
   /* top:630px; */
@@ -323,6 +345,14 @@ button{
     text-align: left
   }
 
+  .confetti{
+    background-image:url('images/confetti.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:850px;
+    margin-top: 70px;
+  }
 /*-----------------------------------------------------------------*/
 /* 로그인 페이지
 /*-----------------------------------------------------------------*/
@@ -397,7 +427,6 @@ button{
   left:51%;
   transform: translate(-50%,-50%);
   border-radius: 15px;
-
 }
 
 #myProgress {
@@ -431,7 +460,7 @@ input[type="checkbox"] + label::before {
   color: white;
   border: 3px solid #5193F0;
   position: relative;
-  top: 4px;
+  top: -4px;
   text-align: left;
   font-size: 15px;
 }
@@ -439,7 +468,7 @@ input[type="checkbox"] + label::before {
 input[type="checkbox"]:checked + label::before {
   content: "\2714";
   background: #5193F0;
-  text-indent: 0.1em;
+  text-indent: 0.4em;
 }
 
 .profile {
@@ -448,3 +477,60 @@ input[type="checkbox"]:checked + label::before {
   margin-right: auto;
   margin-left: auto;
 }
+
+.ageForm {
+  position:absolute;
+  width:350px;
+  padding: 30px, 20px;
+  height: 120px;
+  background-color: #ffffff;
+  text-align:left;
+  top:180px;
+  left:51%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+}
+
+.conmain {
+  position:relative;
+  width:250px;
+  height: 40px;
+  background: #5193F0;
+  border-radius: 6px;
+  color:white;
+  font-weight: bold;
+  left:3%;
+}
+
+.anbtn {
+  position:relative;
+  left:47%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  width:80%;
+  height:40px;
+  background: #ffffff;
+  border-radius: 6px;
+  background-position: left;
+  background-size: 200%;
+  color:rgb(131, 126, 126);
+  font-weight: bold;
+  border:none;
+  cursor:pointer;
+  transition: 0.4s;
+  display: inside;
+  margin-left: 3%;
+}
+
+.conprofile {
+  position:relative;
+  /* left:30%; */
+  width:250px;
+  height: 40px;
+  background: #ffffff00;
+  border: solid;
+  border-radius: 6px;
+  color:#5193F0;
+  font-weight: bold;
+  /* top:630px; */
+  }
