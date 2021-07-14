@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <span class='s6'><a href="/profile">내 프로필 등록하기</a></span>
+    
+    <!--입력창-->
+    
+    <div class="subck">
+    <div class="subtitle">&nbsp&nbsp&nbsp7. 자유롭게 본인을 소개해주세요.</div>
+
+    <form action="doJoin" method="POST" class="ageForm" onsubmit="DoJoinForm__submit(this); return false;">
+        <input type="text" class="input_form" placeholder="자기소개, 프로젝트 참여 이력 등을 자유롭게 입력하세요.(최소 20자)">
+    </form>
+        <div class="btntool">
+        <input type="button" class="btn2a" value="이전" onClick="history.go(-1)">
+        <input type="submit" class="btna" value="다음" onClick="location='confirm'">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+        </div>
+    </div>
+{% endblock %}
