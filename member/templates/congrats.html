@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <span class='s4'><a href="/signup">회원가입</a></span>
+    
+    <!--입력창-->
+    <div class="confetti">
+    <div class="subtitle2">{{nickname}}닉네임님!</div>
+    <div class="subtitle3">LINK:ER 가입을 환영합니다.</div>
+    <div class="btntool">
+        <input type="button" class="conmain" value="내 프로필 등록하기" onClick="location='/profile'">
+        <input type="submit" class="conprofile" value="메인 페이지로 돌아가기" onClick="location='/main'">
+    </div>
+    </div>
+{% endblock %}
