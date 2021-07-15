@@ -516,14 +516,14 @@ pre code {
     max-height: 340px;
     overflow-y: scroll
 }
-
+/* 
 .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto
-}
+} */
 
 @media (min-width: 576px) {
     .container {
@@ -562,7 +562,7 @@ pre code {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-right: -15px;
     margin-left: -15px
 }
@@ -3855,7 +3855,7 @@ tbody.collapse.show {
     display: block
 }
 
-.navbar {
+/* .navbar {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3868,8 +3868,7 @@ tbody.collapse.show {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem
-}
+    padding: .5rem 1rem */
 
 .navbar>.container,.navbar>.container-fluid {
     display: -webkit-box;
@@ -7700,7 +7699,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
     padding: 3rem!important
 }
 
-.pt-5,.py-5 {
+/* .pt-5,.py-5 {
     padding-top: 3rem!important
 }
 
@@ -7710,7 +7709,7 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 
 .pb-5,.py-5 {
     padding-bottom: 3rem!important
-}
+} */
 
 .pl-5,.px-5 {
     padding-left: 3rem!important
@@ -9030,9 +9029,9 @@ a.text-dark:focus,a.text-dark:hover {
         min-width: 992px!important
     }
 
-    .container {
+    /* .container {
         min-width: 992px!important
-    }
+    } */
 
     .navbar {
         display: none

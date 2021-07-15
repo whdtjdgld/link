@@ -51,3 +51,28 @@ def findpw(request):
     template = loader.get_template( "findpw.html" )
     context ={}
     return HttpResponse( template.render( context, request ) )
+
+def q5(request):
+    template = loader.get_template( "q5.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def q6(request):
+    template = loader.get_template( "q6.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def q7(request):
+    template = loader.get_template( "q7.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def q8(request):
+    template = loader.get_template( "q8.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def findteam(request):
+    template = loader.get_template( "findteam.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )

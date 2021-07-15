@@ -13,5 +13,10 @@ urlpatterns = [
     path("q2", views.q2, name="q2"),
     path("q3", views.q3, name="q3"),
     path("q4", views.q4, name="q4"),
+    path("q5", views.q5, name="q5"),
+    path("q6", views.q6, name="q6"),
+    path("q7", views.q7, name="q7"),
+    path("q8", views.q8, name="q8"),
     path("findpw", views.findpw, name="findpw"),
+    path("findteam", views.findteam, name="findteam"),
 ]
