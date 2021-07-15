@@ -564,7 +564,8 @@ pre code {
     -ms-flex-wrap: wrap;
     flex-wrap: nowrap;
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+    align-items: center;
 }
 
 .no-gutters {
@@ -588,6 +589,8 @@ pre code {
 .col {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
+    display: flex;
+    flex-direction: column;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -6534,11 +6537,11 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
     justify-content: flex-end!important
 }
 
-.justify-content-center {
+/* .justify-content-center {
     -webkit-box-pack: center!important;
     -ms-flex-pack: center!important;
     justify-content: center!important
-}
+} */
 
 .justify-content-between {
     -webkit-box-pack: justify!important;

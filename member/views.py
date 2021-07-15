@@ -76,3 +76,8 @@ def findteam(request):
     template = loader.get_template( "findteam.html" )
     context ={}
     return HttpResponse( template.render( context, request ) )
+
+def detail(request):
+    template = loader.get_template( "detail.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )

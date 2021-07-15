@@ -19,4 +19,5 @@ urlpatterns = [
     path("q8", views.q8, name="q8"),
     path("findpw", views.findpw, name="findpw"),
     path("findteam", views.findteam, name="findteam"),
+    path("detail", views.detail, name="detail"),
 ]
