@@ -11,7 +11,7 @@ p {
   font-weight: bold;
 	font-size:14px;
 	line-height: 25px;
-	color: #727272;
+	/* color: #727272; */
 	font-weight: 400;
 }
 
@@ -206,10 +206,10 @@ a {
     left: 50%;
     width: 500px;
     height: 48px;
-    border-top-left-radius:6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius:6px;
-    border-bottom-right-radius: 6px;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
     margin-right:5px;
     border: 6px solid #5193F1;
     margin-left:-260px;
@@ -217,16 +217,19 @@ a {
 
 .searchtxt {
   margin-top: 8px;
-  margin-left: 5px;
+  padding-left: 20px;
   font-weight: bold;
+  color: #5193F1;
 }
 
 .searchbtn {
   background: url( "images/search.png" ) no-repeat;
-  background-size: 32px;
+  margin-top: 1.5%;
+  margin-right: 3%;
+  background-size: 20px;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
@@ -737,9 +740,10 @@ input[type="checkbox"]:checked + label::before {
   }
 
   .container {
-    padding-left: 3rem !important;
+    padding-left: 3rem;
     padding-right: 3rem !important;
     padding-top: 1rem !important;
+    width: 800px;
   }
 
   
@@ -786,6 +790,42 @@ input[type="checkbox"]:checked + label::before {
   /* color:white;
   font-weight: bold;
   left:7%; */
+}
+.prjimg {
+  width:350px;
+  height: 200px;
+  border:solid #5193F1;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+.end {
+  width:350px;
+  height: 200px;
+  border:solid #5193F1;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  background-color :#7e7e7e;
+  z-index: 7;
+}
+.findprjname {
+  font-weight:bold;
+  font-size:16px;
+  padding:20px;
+  text-align:center;
+  white-space: nowrap;
+  word-break : nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+}
+.findprjcontent {
+  margin-bottom:30px;
+  padding-left:30px;
+  height:56px;
+  width:270px;
+  align-items: flex-end;
+  z-index: 1;
 }
 
 .detailbtn {

@@ -81,3 +81,8 @@ def detail(request):
     template = loader.get_template( "detail.html" )
     context ={}
     return HttpResponse( template.render( context, request ) )
+
+def findprj(request):
+    template = loader.get_template( "findprj.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )

@@ -20,4 +20,5 @@ urlpatterns = [
     path("findpw", views.findpw, name="findpw"),
     path("findteam", views.findteam, name="findteam"),
     path("detail", views.detail, name="detail"),
+    path("findprj", views.findprj, name="findprj"),
 ]
