@@ -516,8 +516,8 @@ pre code {
     max-height: 340px;
     overflow-y: scroll
 }
-/* 
-.container {
+
+/* .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -3871,7 +3871,8 @@ tbody.collapse.show {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem */
+    padding: .5rem 1rem
+} */
 
 .navbar>.container,.navbar>.container-fluid {
     display: -webkit-box;
