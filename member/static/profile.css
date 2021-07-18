@@ -32,5 +32,5 @@ input[type="checkbox"] + label::before {
 input[type="checkbox"]:checked + label::before {
     content: "\2714";
     background: #5193F1;
-    text-indent: 0.4em;
+    text-indent: 0.1em;
 }
