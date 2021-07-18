@@ -772,24 +772,18 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .img {
-  /* position:relative; */
   width:120px;
   height: 120px;
   border:solid #5193F1;
   border-radius: 15px;
-  /*  or:white;
-  font-weight: bold;
-  left:7%; */
+
 }
 .img2 {
-  /* position:relative; */
   width:230px;
   height: 230px;
   border:solid #5193F1;
   border-radius: 15px;
-  /* color:white;
-  font-weight: bold;
-  left:7%; */
+
 }
 .prjimg {
   width:350px;
@@ -800,13 +794,11 @@ input[type="checkbox"]:checked + label::before {
   z-index: 2;
 }
 .end {
-  width:350px;
-  height: 200px;
-  border:solid #5193F1;
-  border-radius: 20px;
-  margin-bottom: 50px;
-  background-color :#7e7e7e;
-  z-index: 7;
+  background-image:url('images/complete.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
 }
 .findprjname {
   font-weight:bold;
