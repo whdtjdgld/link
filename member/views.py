@@ -90,4 +90,9 @@ def findprj(request):
 def prjdetail(request):
     template = loader.get_template( "prjdetail.html" )
     context ={}
+    return HttpResponse( template.render( context, request ) )  
+
+def chat(request):
+    template = loader.get_template( "chat.html" )
+    context ={}
     return HttpResponse( template.render( context, request ) )

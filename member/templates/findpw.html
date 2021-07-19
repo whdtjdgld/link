@@ -15,7 +15,13 @@
         <p style="font-weight:bold; text-align:left;">이메일</p>
         <input type="text" class="findpwinput" placeholder="example@naver.com">
         <br>
-        <input type="button" class="findpwbtn" value="인증메일 전송하기" onClick="#이메일이전송되었습니다">
+        <input type="button" class="findpwbtn" value="인증메일 전송하기" onClick="send()">
+        <script>
+            function send(){
+                alert("이메일로 비밀번호를 보내드렸습니다! 확인해주세요.");
+                location.href = "login";
+                } 
+        </script>
     </div>
     </div>
 {% endblock %}

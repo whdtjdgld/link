@@ -24,21 +24,21 @@ a {
     background-color: none;
     position: absolute;
     top:25px;
-    right:180px;
+    right:200px;
     font-size:13px;
 }
 .s2{
     background-color: none;
     position: absolute;
     top:25px;
-    right:115px;
+    right:170px;
     font-size:13px;
 }
 .s3{
     background-color: none;
     position: absolute;
-    top:25px;
-    right:40px;
+    top:18px;
+    right:150px;
     font-size:13px;
 }
 
@@ -304,6 +304,8 @@ input{
 }
 
 .input_form5{
+  overflow: auto;
+  border: none;
   text-align: left;
   font-weight: bold;
   padding: 10px;
@@ -316,6 +318,23 @@ input{
   text-align: left;
   font-weight: bold;
   padding: 10px;
+}
+
+/* 스크롤바 설정*/
+.input_form5::-webkit-scrollbar{
+  width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+.input_form5::-webkit-scrollbar-thumb{
+  height: 10%;
+  background-color: #5193F1;
+  border-radius: 30px;  
+}
+
+/* 스크롤바 뒷 배경 설정*/
+.input_form5::-webkit-scrollbar-track{
+  background-color: #c8c8c9;
 }
 
 button{
@@ -350,8 +369,6 @@ button{
     left:39%;
     border-radius: 30px;
   }
-
-
   
   .joinForm h2 {
     text-align: center;
@@ -689,7 +706,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .interprofile {
-  overflow: auto;
   width: 100%;
   padding: 30px;
   margin-right: auto;
@@ -711,23 +727,6 @@ input[type="checkbox"]:checked + label::before {
 
 /* 스크롤바 뒷 배경 설정*/
 .profile::-webkit-scrollbar-track{
-  background-color: #c8c8c9;
-}
-
-/* 스크롤바 설정*/
-.interprofile::-webkit-scrollbar{
-  width: 6px;
-}
-
-/* 스크롤바 막대 설정*/
-.interprofile::-webkit-scrollbar-thumb{
-  height: 10%;
-  background-color: #5193F1;
-  border-radius: 30px;  
-}
-
-/* 스크롤바 뒷 배경 설정*/
-.interprofile::-webkit-scrollbar-track{
   background-color: #c8c8c9;
 }
 
@@ -803,12 +802,14 @@ input[type="checkbox"]:checked + label::before {
 
   .navbar {
     position: relative;
-    display: flex;
+    /* display: flex;/ */
     flex-wrap: wrap;
     align-items: center;
     /* justify-content: space-between;/ */
-    height: 75px;
+    height: 68px;
     width: auto;
+    border-bottom: solid #5193F1 3px;
+
 
   }
 
@@ -825,7 +826,10 @@ input[type="checkbox"]:checked + label::before {
     padding-top: 1rem !important;
     width: 800px;
   }
-
+  .navcontainer {
+    padding-top: 20px;
+    float: right;
+  }
 
 .row {
   /* --bs-gutter-x: 1.5rem; */
@@ -844,7 +848,7 @@ input[type="checkbox"]:checked + label::before {
 
 .row > * {
   flex-shrink: 0;
-  width: 100%;
+  /* width: 100%; */
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) / 2);
   padding-left: calc(var(--bs-gutter-x) / 2);
@@ -852,17 +856,25 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .img {
+  /* position:relative; */
   width:120px;
   height: 120px;
   border:solid #5193F1;
   border-radius: 15px;
-}
+  /* color:white;
+  font-weight: bold;
+  left:7%; */
+} 
+
 .img2 {
+  /* position:relative; */
   width:230px;
   height: 230px;
   border:solid #5193F1;
   border-radius: 15px;
-
+  /* color:white;
+  font-weight: bold;
+  left:7%; */
 }
 
 .textcenter{
@@ -887,11 +899,16 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .end {
+  width:350px;
+  height: 200px;
+  border:solid #5193F1;
+  border-radius: 20px;
+  margin-bottom: 50px;
   background-image:url('images/complete.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
 }
 .findprjname {
   font-weight:bold;
@@ -905,12 +922,14 @@ input[type="checkbox"]:checked + label::before {
   z-index: 2;
 }
 .findprjcontent {
-  margin-bottom:30px;
   padding-left:30px;
-  height:56px;
-  width:270px;
+  padding-right:30px;
+  height:60px;
+  width:100%;
+  display: flex;
   align-items: flex-end;
-  z-index: 1;
+  justify-content: space-between;
+  
 }
 
 .detailbtn {
@@ -918,7 +937,7 @@ input[type="checkbox"]:checked + label::before {
   height: 40px;
   background: #5193F1;
   border-radius: 10px;
-  color:white;
+  color: white;
   font-weight: bold;
 }
 
@@ -991,4 +1010,45 @@ input[name="tab_item"] {
 .tabs input:checked + .tab_item {
   background-color: #5193F1;
   color: #fff;
+}
+
+.form1 {
+  width: 100%;
+  background-color: #b4b4b4;
+  border: 1px solid #b4b4b4;
+  padding: 30px;
+}
+
+.chat {
+  position:relative;
+  width: 80px;
+  height: 80px;
+  border: solid #5193F1;
+  border-radius: 15px;
+  left: 5px;
+  top: 15px;
+  /* color:white;
+  font-weight: bold;
+  left:7%; */
+}
+
+.py-6 {
+  padding-left: 1%;
+  padding-right: 25%;
+  padding-top: 5px !important;
+  padding-bottom: 5rem !important;
+}
+
+.line {
+  width: 98vw;
+  border: solid 1px #969696;
+  border-bottom: 0px;
+  margin-left: 0px;
+}
+
+.container2 {
+  padding-left: 3rem;
+  padding-right: 3rem !important;
+  padding-top: 1rem !important;
+  width: 800px;
 }

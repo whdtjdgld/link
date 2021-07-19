@@ -3,7 +3,6 @@
 <html lang="kr-gb">
     <head>
         <meta charset="utf-8">
-	    {% comment %} <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> {% endcomment %}
         <title>링커</title>	
         <!--Styles-->
         <link rel="stylesheet" type="text/css" href="static/style.css">
@@ -16,14 +15,16 @@
     <body>
         <!--Start Logo -->
         <nav class="navbar">
-            <img 
+        <img 
             src="static/images/linker-logo.png" alt="logo here"
-            style="position:absolute; width:100px; height:90px; top:-0.8em; left: 1em; background-color: none;"/
+            style="position:absolute; width:100px; height:90px; top:-0.8em; left: 1em; background-color: none;"
             onclick="location='/main'">
-        <img src="static/images/bar.png" alt="bar here" style="position:relative; width:max-content; height:3px; top:28px;"/>
-        <span class='s1'><a href="/profile">내 프로필 등록하기</a></span>
-        <span class='s2'><a href="/login">로그인</a></span>
-        <span class='s3'><a href="/signup">회원가입</a></span>
+        <div class="navcontainer px-4 px-lg-5">
+        <span style="margin-right:20px;"><a style="font-size:13px;" href="/profile">내 프로필 등록하기</a></span>
+        <span style="margin-right:20px;"><a style="font-size:13px;" href="/login">로그인</a></span>
+        <span style="margin-right:20px;"><a style="font-size:13px;" href="/signup">회원가입</a></span>
+        <img src="static/images/profile.png" style="position:relative; height:30px; width:30px;">
+        </div>
         </nav>
         <!--End Logo--> 
         
