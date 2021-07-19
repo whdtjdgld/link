@@ -21,4 +21,5 @@ urlpatterns = [
     path("findteam", views.findteam, name="findteam"),
     path("detail", views.detail, name="detail"),
     path("findprj", views.findprj, name="findprj"),
+    path("chat", views.chat, name="chat"),
 ]
