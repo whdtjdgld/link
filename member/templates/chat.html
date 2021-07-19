@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form1">
+    <p style="position:absolute; width:80px; height:25px; top: 5.2em; left: 1em; color: #000000; font-weight: bold; font-size: 18px; background-color: none;">채팅 목록</p>
+    <p style="position:absolute; width:60px; height:25px; top: 5.8em; left: 121em; color: #000000; font-weight: bold; background-color: none;">모두<br>읽기</p>
+    <img src="static/images/return.png" style="position:absolute; width:25px; height:25px; top: 5.8em; left: 109em; background-color: none;"/>
+    <img src="static/images/alarm.png" style="position:absolute; width:25px; height:25px; top: 5.8em; left: 112em; background-color: none;"/>
+    <img src="static/images/settings.png" style="position:absolute; width:25px; height:25px; top: 5.8em; left: 115em; background-color: none;" href="/settings"/>
+</div>
+<section class="py-6">
+    <div class="container2"> <!--판 위에 하나 더-->
+        <div class="row"> <!--도화지-->
+            <img class="chat" src="" alt="...">
+            <div class="justify-content-center" style="padding-left:5%;"><br>
+                <h6 style="position: absolute; font-weight: bold; color: #000000; left: 1700px;">2021-06-28</h6>
+                <h6 onclick="location='/detail'" style="font-weight:bold; color: #5193F1;">공모전</h6>
+                <p style="font-weight:bold; color: #000000;">구체적인 사안은 앞으로 3일 정도...<br>000</p>
+            </div>
+        </div>
+    </div>
+    <hr class="line">
+    <div class="container2"> <!--판 위에 하나 더-->
+        <div class="row"> <!--도화지-->
+            <img class="chat" src="" alt="...">
+            <div class="justify-content-center" style="padding-left:5%;"><br>
+                <span style="position: absolute; font-weight: bold; color: #000000; left: 1700px;">2021-05-29</span>
+                <h6 onclick="location='/detail'" style="font-weight:bold; color: #5193F1;">스타트업</h6>
+                <p style="font-weight:bold; color: #000000;">네 알겠습니다!<br>000</p>
+            </div>
+        </div>
+    </div>
+    <hr class="line">
+    <div class="container2"> <!--판 위에 하나 더-->
+        <div class="row"> <!--도화지-->
+            <img class="chat" src="" alt="...">
+            <div class="justify-content-center" style="padding-left:5%;"><br>
+                <h6 style="position: absolute; font-weight: bold; color: #000000; left: 1700px;">2021-04-12</h6>
+                <h6 onclick="location='/detail'" style="font-weight:bold; color: #5193F1;">공모전</h6>
+                <p style="font-weight:bold; color: #000000;">[사진]<br>000</p>
+            </div>
+        </div>
+    </div>
+    <hr class="line">
+</section>
+{% endblock %}
