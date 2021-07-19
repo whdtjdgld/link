@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+    <br>
+    <h2 style="margin-left:19%; font-weight:bold;" onclick="location='/findprj'">
+    <img src="static/images/search-file.png" style="width:45px; height:45px;">&nbsp&nbsp&nbsp프로젝트 찾기
+    </h2>
+    <br><br>
+    <section class="py-5">
+        <div class="container" style="padding-left:0;">
+            <div class="row" style="align-items:center;">
+                <div class="prjimg gray textcenter" style="margin-bottom:0; height:230px; width:370px; padding:30px;">
+                    <a style="font-size:28px;">(공모전)<br> 한관공 공모전 같이 나갈 사람 구합니다.</a>
+                </div>
+                <div class="justify-content-center" style="padding-left:5%;">
+                    <h5 style="font-weight:bold;">(공모전) 한관공 공모전 같이 나갈 사람 구합니다.</h5><br>
+                    <p style="font-size:16px; font-weight:bold;">
+                        모집기간: ~5월 18일 화요일
+                    </p>
+                    <p style="font-size:16px; font-weight:bold;">
+                        모집인원: 촬영 1명, 편집 1/2명, 배우 2/2명
+                    </p>
+                    <p style="font-size:16px; font-weight:bold;">
+                        팀장: 도토리 7502
+                    </p>
+                    <div>
+                        <a style="font-size:16px; font-weight:bold; color: #727272;">
+                        팀명: 미정
+                        </a>
+                        <input type="button" class="detailbtn" style="position:absolute; margin-left:10%;"value="참여하기" onclick="participate()">
+                        <script>
+                            function participate(){
+                                if(confirm("정말 프로젝트에 참여 하시겠습니까?"))
+                                {
+                                location.href = "main";
+                                } else {
+                                return;
+                                    }
+                                } 
+                        </script>
+                    </div>         
+                </div>
+            </div><br><br><br>
+            <div class="tabs">
+                <input id="all" type="radio" name="tab_item" checked>
+                <label class="tab_item" for="all">소개</label>
+                <input id="programming" type="radio" name="tab_item">
+                <label class="tab_item" for="programming">팀장</label>
+                <input id="design" type="radio" name="tab_item">
+                <label class="tab_item" for="design">Q&A</label>
+                
+                <div class="tab_content" id="all_content">
+                        (팀장이 작성하게 되는 정보)<br>
+                        <a>사진파일</a>
+                </div>
+                <div class="tab_content" id="programming_content">
+                    <a>팀장 소개</a>
+                    <br><br>
+                    <a>팀장</a>
+                    <br><br>
+                    다양한 공모전 경험을 통해 3차례의 수상을 경험한 팀장 000입니다.
+                    뛰어난 리더십과 수행능력을 통해 팀을 이끌어갑니다.
+                    <br><br>
+                    <a>& 수상 이력</a>
+                    <br><br>
+                    공모전<br>
+                    <li>인천공항공사 000 공모전 최우수상</li>
+                    <li>00 공모전 우수상</li>
+                    <li>대한민국 관광공모전 사진 부문 국무총리상</li>
+                    <br><br>
+                    스타트업<br>
+                    <li>000 스타트업 참여</li>
+                    <br><br>
+                    <a>& 보유 자격증</a>
+                    <br><br>
+                    <li>JLPT 2급</li>
+                    <li>TOEIC 890</li>
+                    <li>영상디자인00 0급</li>
+                </div>
+                <div class="tab_content" id="design_content">
+                        Thanks a lot
+                </div>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

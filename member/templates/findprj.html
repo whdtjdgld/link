@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
     <br>
-    <h2 style="margin-left:19%; font-weight:bold;" onclick="location='/findprj">
+    <h2 style="margin-left:19%; font-weight:bold;" onclick="location='/findprj'">
         <img src="static/images/search-file.png" style="width:45px; height:45px;">&nbsp&nbsp&nbsp프로젝트 찾기
     </h2>
     <section class="py-5"> <!--판짜기-->
         <div class="container" style="padding-left:0;"> <!--판 위에 하나 더-->
             <div class="row" style="flex-wrap:wrap; justify-content: space-between;">
-                <div class="prjimg" onclick="location='#prjdetail'">
+                <div class="prjimg" onclick="location='/prjdetail'">
                     <p class="findprjname">
                         (공모전) 한관광 공모전 같이 나갈 사람 구함
                     </p><br><br>
@@ -61,9 +61,7 @@
                         <a>멤버 2/4명</a>    
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
-    <br>
 {% endblock %}

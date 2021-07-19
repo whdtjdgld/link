@@ -12,7 +12,7 @@ p {
 	font-size:14px;
 	line-height: 25px;
 	color: #727272;
-	font-weight: 400;
+	/* font-weight: 400; */
 }
 
 a {
@@ -806,8 +806,10 @@ input[type="checkbox"]:checked + label::before {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between;/ */
     height: 75px;
+    width: auto;
+
   }
 
   .py-5 {
@@ -863,6 +865,18 @@ input[type="checkbox"]:checked + label::before {
 
 }
 
+.textcenter{
+  text-align: center;
+  color: #212529;
+  font-family: "Do Hyeon";
+
+}
+
+.gray{
+  background-color: #96949468;
+
+}
+
 .prjimg {
   width:350px;
   height: 200px;
@@ -871,6 +885,7 @@ input[type="checkbox"]:checked + label::before {
   margin-bottom: 50px;
   z-index: 2;
 }
+
 .end {
   background-image:url('images/complete.PNG');
     background-size: cover;
@@ -899,7 +914,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .detailbtn {
-  width:180px;
+  width:160px;
   height: 40px;
   background: #5193F1;
   border-radius: 10px;
@@ -908,7 +923,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .detailbtn2 {
-  width:180px;
+  width:160px;
   height: 40px;
   background: #ffffff;
   border-radius: 10px;
@@ -917,3 +932,63 @@ input[type="checkbox"]:checked + label::before {
   border:solid;
   margin-left: 3%;
 } 
+
+/*-----------------------------------------------------------------*/
+/* 프로젝트찾기
+/*-----------------------------------------------------------------*/
+
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 탭 스타일 */
+.tab_item {
+  width: calc(100%/3);
+  height: 35px;
+  border-bottom: 3px solid #5193F1;
+  background-color: #f8f8f8;
+  line-height: 35px;
+  font-size: 13px;
+  text-align: center;
+  color: #5193F1;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content {
+  display: block;
+}
+
+/* 선택된 탭 스타일 */
+.tabs input:checked + .tab_item {
+  background-color: #5193F1;
+  color: #fff;
+}
