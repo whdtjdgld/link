@@ -12,7 +12,7 @@ p {
 	font-size:14px;
 	line-height: 25px;
 	color: #727272;
-	/* font-weight: 400; */
+	font-weight: 400;
 }
 
 a {
@@ -802,15 +802,13 @@ input[type="checkbox"]:checked + label::before {
 
   .navbar {
     position: relative;
-    /* display: flex;/ */
+    /* display: flex; */
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: space-between;/ */
+    justify-content: space-between;
     height: 68px;
     width: auto;
     border-bottom: solid #5193F1 3px;
-
-
   }
 
   .py-5 {
@@ -826,6 +824,7 @@ input[type="checkbox"]:checked + label::before {
     padding-top: 1rem !important;
     width: 800px;
   }
+
   .navcontainer {
     padding-top: 20px;
     float: right;
@@ -877,18 +876,6 @@ input[type="checkbox"]:checked + label::before {
   left:7%; */
 }
 
-.textcenter{
-  text-align: center;
-  color: #212529;
-  font-family: "Do Hyeon";
-
-}
-
-.gray{
-  background-color: #96949468;
-
-}
-
 .prjimg {
   width:350px;
   height: 200px;
@@ -897,7 +884,6 @@ input[type="checkbox"]:checked + label::before {
   margin-bottom: 50px;
   z-index: 2;
 }
-
 .end {
   width:350px;
   height: 200px;
@@ -929,11 +915,10 @@ input[type="checkbox"]:checked + label::before {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  
 }
 
 .detailbtn {
-  width:160px;
+  width:180px;
   height: 40px;
   background: #5193F1;
   border-radius: 10px;
@@ -942,20 +927,20 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .detailbtn2 {
-  width:160px;
+  width:180px;
   height: 40px;
   background: #ffffff;
   border-radius: 10px;
   color:#5193F1;
   font-weight: bold;
   border:solid;
-  margin-left: 3%;
-} 
+  margin-left: 60%;
+  margin-top: -11.1%;
+}
 
 /*-----------------------------------------------------------------*/
 /* 프로젝트찾기
 /*-----------------------------------------------------------------*/
-
 .tabs {
   margin-top: 50px;
   padding-bottom: 40px;
@@ -964,7 +949,6 @@ input[type="checkbox"]:checked + label::before {
   width: 100%;
   margin: 0 auto;
 }
-
 /* 탭 스타일 */
 .tab_item {
   width: calc(100%/3);
@@ -984,12 +968,10 @@ input[type="checkbox"]:checked + label::before {
 .tab_item:hover {
   opacity: 0.75;
 }
-
 /* 라디오 버튼 UI삭제*/
 input[name="tab_item"] {
   display: none;
 }
-
 /* 탭 컨텐츠 스타일 */
 .tab_content {
   display: none;
@@ -997,15 +979,12 @@ input[name="tab_item"] {
   clear: both;
   overflow: hidden;
 }
-
-
 /* 선택 된 탭 콘텐츠를 표시 */
 #all:checked ~ #all_content,
 #programming:checked ~ #programming_content,
 #design:checked ~ #design_content {
   display: block;
 }
-
 /* 선택된 탭 스타일 */
 .tabs input:checked + .tab_item {
   background-color: #5193F1;
@@ -1051,4 +1030,107 @@ input[name="tab_item"] {
   padding-right: 3rem !important;
   padding-top: 1rem !important;
   width: 800px;
+}
+
+.form1 {
+  width: 100%;
+  background-color: #b4b4b4;
+  border: 1px solid #b4b4b4;
+  padding: 30px;
+}
+
+.chat {
+  position:relative;
+  width: 80px;
+  height: 80px;
+  border: solid #5193F1;
+  border-radius: 15px;
+  left: 5px;
+  top: 15px;
+  /* color:white;
+  font-weight: bold;
+  left:7%; */
+}
+
+.py-6 {
+  padding-left: 1%;
+  padding-right: 25%;
+  padding-top: 5px !important;
+  padding-bottom: 5rem !important;
+}
+
+.line {
+  width: 98vw;
+  border: solid 1px #969696;
+  border-bottom: 0px;
+  margin-left: 0px;
+}
+
+.container2 {
+  padding-left: 3rem;
+  padding-right: 3rem !important;
+  padding-top: 1rem !important;
+  width: 800px;
+}
+
+.date {
+  position: absolute;
+  font-weight: bold;
+  color: #000000;
+  left: 89%;
+}
+
+.prj {
+  font-weight:bold;
+  color: #5193F1;
+}
+
+.list {
+  position:absolute;
+  width: 80px;
+  height: 25px;
+  top: 5.2em;
+  left: 1%;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: none;
+}
+
+.all {
+  position:absolute;
+  width:60px;
+  height:25px;
+  top: 5.8em;
+  left: 88%;
+  color: #000000;
+  font-weight: bold;
+  background-color: none;
+}
+
+.return {
+  position:absolute;
+  width:25px;
+  height:25px;
+  top: 5.8em;
+  left: 90.8%;
+  background-color: none;
+}
+
+.alarm {
+  position:absolute;
+  width:25px;
+  height:25px;
+  top: 5.8em;
+  left: 93.3%;
+  background-color: none;
+}
+
+.settings {
+  position:absolute;
+  width:25px;
+  height:25px;
+  top: 5.8em;
+  left: 96%;
+  background-color: none;
 }
