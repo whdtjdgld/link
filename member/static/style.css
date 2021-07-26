@@ -1134,3 +1134,13 @@ input[name="tab_item"] {
   left: 96%;
   background-color: none;
 }
+
+.app {
+  position: relative;
+  width:120px;
+  height: 120px;
+  border:solid #5193F1;
+  border-radius: 15px;
+  left: -30px;
+  top: 15px;
+}
