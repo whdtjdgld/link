@@ -96,3 +96,8 @@ def chat(request):
     template = loader.get_template( "chat.html" )
     context ={}
     return HttpResponse( template.render( context, request ) )
+
+def app(request):
+    template = loader.get_template( "application.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
