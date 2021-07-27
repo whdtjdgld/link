@@ -433,7 +433,7 @@ button{
   border-radius: 6px;
   background-position: left;
   background-size: 200%;
-  color:#837e7e;
+  color:rgb(131, 126, 126);
   font-weight: bold;
   border:none;
   cursor:pointer;
@@ -711,9 +711,6 @@ input[type="checkbox"]:checked + label::before {
   margin-right: auto;
   margin-left: auto;
   height: 310px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 
 /* 스크롤바 설정*/
@@ -804,12 +801,19 @@ input[type="checkbox"]:checked + label::before {
   }
 
   .navbar {
+    position: relative;
+    /* display: flex; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     height: 68px;
+    width: auto;
     border-bottom: solid #5193F1 3px;
   }
 
   .py-5 {
     padding-left: 25%;
+    padding-right: 25%;
     padding-top: 5px !important;
     padding-bottom: 5rem !important;
   }
@@ -1153,6 +1157,23 @@ input[name="tab_item"] {
   height: 400px;
 }
 
+/* 스크롤바 설정*/
+.input_form6::-webkit-scrollbar{
+  width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+.input_form6::-webkit-scrollbar-thumb{
+  height: 10%;
+  background-color: #5193F1;
+  border-radius: 30px;  
+}
+
+/* 스크롤바 뒷 배경 설정*/
+.input_form6::-webkit-scrollbar-track{
+  background-color: #c8c8c9;
+}
+
 .app {
   position: relative;
   width:120px;
@@ -1161,4 +1182,135 @@ input[name="tab_item"] {
   border-radius: 15px;
   left: -30px;
   top: 15px;
+}
+
+.table2 {
+  width:1000px;
+  max-width: 100%;
+  padding-left: 30%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.table2 td,.table2 th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  color: #919191;
+  left: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table2 thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background-color: #5193F1;
+  left: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.square {
+  position: relative;
+  width:1000px;
+  height: 188px;
+  border:solid #5193F1;
+  border-radius: 15px;
+  left: 20%;
+  top: -20%;
+}
+
+.img1 {
+  position:absolute;
+  width:50px;
+  height:50px;
+  top: 2em;
+  left: 10%;
+}
+
+.img3 {
+  position:absolute;
+  width:50px;
+  height:50px;
+  top: 2em;
+  left: 50%;
+}
+
+.img4 {
+  position:absolute;
+  width:50px;
+  height:50px;
+  top: 6.5em;
+  left: 10%;
+}
+
+.img5 {
+  position:absolute;
+  width:50px;
+  height:50px;
+  top: 6.5em;
+  left: 50%;
+}
+
+.ban1 {
+    position:absolute;
+    width:120px;
+    height:25px;
+    top: 3em;
+    left: 17%;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+    background-color: none;
+}
+
+.ban2 {
+  position:absolute;
+  width:120px;
+  height:25px;
+  top: 3em;
+  left: 57%;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+  background-color: none;
+}
+
+.ban3 {
+  position:absolute;
+  width:120px;
+  height:25px;
+  top: 8em;
+  left: 17%;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+  background-color: none;
+}
+
+.ban4 {
+  position:absolute;
+  width:120px;
+  height:25px;
+  top: 8em;
+  left: 57%;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+  background-color: none;
+}
+
+.num {
+  color: #5193F1;
+  font-weight: bold;
+  padding-left: 21%;
+}
+
+.time {
+  color: #525252;
+  font-weight: bold;
+  padding-left: 21%;
 }
