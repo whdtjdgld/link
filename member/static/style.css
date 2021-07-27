@@ -1128,6 +1128,7 @@ input[name="tab_item"] {
   background-color: none;
 }
 
+<<<<<<< HEAD
 .reviseself {
   padding:15px;
   border-bottom: solid #9c9999 10px;
@@ -1148,4 +1149,14 @@ input[name="tab_item"] {
   font-size: 20px;
   width:90%;
   height: 400px;
+=======
+.app {
+  position: relative;
+  width:120px;
+  height: 120px;
+  border:solid #5193F1;
+  border-radius: 15px;
+  left: -30px;
+  top: 15px;
+>>>>>>> 132128f449ed0da379de227deeca644fd3dbb357
 }
