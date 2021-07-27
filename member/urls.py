@@ -28,4 +28,5 @@ urlpatterns = [
     path("mypage", views.mypage, name="mypage"),
     path("consultchat", views.consultchat, name="consultchat"),
     path("app", views.app, name="app"),
+    path("service", views.service, name="service"),
 ]

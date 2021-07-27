@@ -121,3 +121,8 @@ def app(request):
     template = loader.get_template( "application.html" )
     context ={}
     return HttpResponse( template.render( context, request ) )
+
+def service(request):
+    template = loader.get_template( "service.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
