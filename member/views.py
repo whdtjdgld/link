@@ -96,3 +96,23 @@ def chat(request):
     template = loader.get_template( "chat.html" )
     context ={}
     return HttpResponse( template.render( context, request ) )
+
+def gongmo(request):
+    template = loader.get_template( "gongmo.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def revise(request):
+    template = loader.get_template( "revise.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def mypage(request):
+    template = loader.get_template( "mypage.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )
+
+def consultchat(request):
+    template = loader.get_template( "consultchat.html" )
+    context ={}
+    return HttpResponse( template.render( context, request ) )

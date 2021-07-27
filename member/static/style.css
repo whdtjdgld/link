@@ -433,7 +433,7 @@ button{
   border-radius: 6px;
   background-position: left;
   background-size: 200%;
-  color:rgb(131, 126, 126);
+  color:#837e7e;
   font-weight: bold;
   border:none;
   cursor:pointer;
@@ -801,19 +801,12 @@ input[type="checkbox"]:checked + label::before {
   }
 
   .navbar {
-    position: relative;
-    /* display: flex; */
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     height: 68px;
-    width: auto;
     border-bottom: solid #5193F1 3px;
   }
 
   .py-5 {
     padding-left: 25%;
-    padding-right: 25%;
     padding-top: 5px !important;
     padding-bottom: 5rem !important;
   }
@@ -1133,4 +1126,26 @@ input[name="tab_item"] {
   top: 5.8em;
   left: 96%;
   background-color: none;
+}
+
+.reviseself {
+  padding:15px;
+  border-bottom: solid #9c9999 10px;
+  border-top: solid #9c9999 10px;
+  border-left: solid #9c9999 16px;
+  border-right: solid #9c9999 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  width:830px;
+  height: 300px;
+}
+
+.consult {
+  padding:35px;
+  border:solid #817f7f 2px;
+  border-radius: 10px;
+  font-size: 20px;
+  width:90%;
+  height: 400px;
 }
