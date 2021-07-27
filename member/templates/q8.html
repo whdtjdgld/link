@@ -7,14 +7,17 @@
 
     <form action="doJoin" method="POST" class="interForm" onsubmit="DoJoinForm__submit(this); return false;">
     <div class="interprofile">
-        <textarea type="text" class="input_form5" placeholder="자기소개, 프로젝트 참여 이력 등을 자유롭게 입력하세요.(최소 20자)" rows="10" cols="150" onkeyup="countingWords()"></textarea>
+        <textarea type="text" id="usertxt" class="input_form5" placeholder="자기소개, 프로젝트 참여 이력 등을 자유롭게 입력하세요.(최소 20자)" rows="10" cols="150" onkeyup="countingWords()"></textarea>
+        <div style="float:right; display:flex;">
+        <p style="font-size:15px; font-weight:bold; margin-bottom:0;" id="count">0</p> &nbsp;
+        <p style="font-size:15px; font-weight:bold; margin-bottom:0;" >/ 5,000자</p>
+        </div>
     </div>
-    <script>
+    <script language="javascript">
         function countingWords(){
-            document.getElemetByld
+           document.getElementById("count").innerHTML = document.getElementById("usertxt").value.length;
         }
-    </script>
-
+    </script>    
     </form>
         <div class="btntool3">
         <input type="submit" class="btndone" value="등록 완료하기" onClick="order()">

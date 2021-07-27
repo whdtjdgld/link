@@ -711,6 +711,9 @@ input[type="checkbox"]:checked + label::before {
   margin-right: auto;
   margin-left: auto;
   height: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /* 스크롤바 설정*/

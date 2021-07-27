@@ -29,7 +29,11 @@
     <div style="display:flex; flex-direction: column; width: 830px;">
     <h4 style="font-weight:bold; margin-bottom: 0; padding: 10px;">자기소개서</h4>
     <br>
-    <textarea type="text" class="reviseself" placeholder="자기소개, 프로젝트 참여 이력 등을 자유롭게 입력하세요.(최소 20자)" onkeyup="countingWords()"></textarea>
+    <textarea type="text" id="usertxt" class="reviseself" placeholder="자기소개, 프로젝트 참여 이력 등을 자유롭게 입력하세요.(최소 20자)" onkeyup="countingWords()"></textarea>
+    <div style="display:flex; justify-content: flex-end">
+        <p style="font-size:18px; font-weight:bold; margin-bottom:0;" id="count">0</p> &nbsp;
+        <p style="font-size:18px; font-weight:bold; margin-bottom:0;" >/ 5,000자</p>
+        </div>
     <br>
     <div>
     <input type="button" style="width:200px; height: 45px; background: #5193F1; border-radius: 10px;
@@ -37,4 +41,9 @@
     </div>
     </div>
     </div>
+    <script language="javascript">
+        function countingWords(){
+           document.getElementById("count").innerHTML = document.getElementById("usertxt").value.length;
+        }
+    </script>  
 {% endblock %}
