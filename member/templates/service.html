@@ -1,60 +1,88 @@
 {% extends "base.html" %}
 {% block content %}
-    <div style="padding-top:2%; padding-bottom:4%; padding-left:15%;">
+    <div style="padding-top:2%; padding-bottom:4%; padding-left:15%; width:70%">
         <div style="display:flex; align-items: center;">
             <img src="static/images/profile.png" style="width:50px; height:50px;">
             <div style="padding-left:2%;">
-                <h3 style="font-weight:bold;">마이 페이지 < 고객센터</h3>
+                <h3 style="font-weight:bold; margin-bottom:0;">마이 페이지 < 고객센터</h3>
+            </div>
+        </div>
+        <div class="square">
+            <table class="table2">
+                <thead>
+                    <tr>
+                        <th style="width:10%;">No.</th>
+                        <th style="width:40%;">공지 일자</th>
+                        <th style="width:40%;">공지 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2021.08.18</td>
+                        <td>8월 신규 업데이트 안내</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2021.12.15</td>
+                        <td>시스템 점검 및 기타 안내</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2022.01.31</td>
+                        <td>사이트 개편 안내</td>
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+    <div class="square" style="padding:20px;">
+        <div style="display:flex; align-items: center;">
+            <div style="padding-left:4%;">
+                <img src="static/images/chat.png" style="width:50px; height:50px;">
+            </div>
+                <div style="padding-left:2%;">
+            <a style="font-size:17px; font-weight: bold;" onClick="location='/consultchat'">실시간 채팅 상담</a>
+            </div>
+            <div style="padding-left:4%;">
+                <img src="static/images/email.png" style="width:50px; height:50px;">
+            </div>
+            <div style="padding-left:2%;">
+                <a style="font-size:17px; font-weight: bold;">이메일로 문의하기</a>
+            </div>
+        </div><br><br>
+        <div style="display:flex; align-items: center;">
+            <div style="padding-left:4%;">
+                <img src="static/images/message.png" style="width:50px; height:50px;">
+            </div>
+            <div style="padding-left:2%;">
+                <a style="font-size:17px; font-weight: bold;">의견 제안 하기</a>
+            </div>
+            <div style="padding-left:6%;">
+                <img src="static/images/alert.png" style="width:50px; height:50px;">
+            </div>
+            <div style="padding-left:2%;">
+                <a style="font-size:17px; font-weight: bold;">유저 신고하기</a>
             </div>
         </div>
     </div>
-    <div class="square">
-        <table class="table2" style="align: center">
-            <thead>
-            <tr>
-                <th style="width:12%;">No.</th>
-                <th style="width:12%;">공지 일자</th>
-                <th style="width:12%;">공지 내용</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>2021.08.18</td>
-                <td>8월 신규 업데이트 안내</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>2021.12.15</td>
-                <td>시스템 점검 및 기타 안내</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>2022.01.31</td>
-                <td>사이트 개편 안내</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <br>
-    <div class="square">
-        <img src="static/images/chat.png" class="img1">
-        <p class="ban1" onClick="location='/consultchat'">실시간 채팅 상담</p>
-        <img src="static/images/email.png" class="img3">
-        <p class="ban2">이메일로 문의하기</p>
-        <img src="static/images/message.png" class="img4">
-        <p class="ban3">의견 제안 하기</p>
-        <img src="static/images/alert.png" class="img5">
-        <p class="ban4">유저 신고하기</p>
-    </div>
     <br><br>
     <div class="num">
-    1599-1599
+        1599-1599   
     </div>
     <br>
     <div class="time">
-    평일 10:00~18:00
-    <br>
-    (점심시간 13:00~14:00 제외, 주말/공휴일 제외)
+        <p style="font-size:18px;">평일 10:00~18:00</p>
+        <p style="font-size:18px;">(점심시간 13:00~14:00 제외, 주말/공휴일 제외)</p>
     </div>
+    <div style="padding-left:13%; display:flex;">        
+        <img src="static/images/facebook.png" style="width:40px; height:40px;">
+        <div style="padding-left:1%;">
+            <img src="static/images/insta.png" style="width:40px; height:40px;">
+        </div>
+        <div style="padding-left:1%;">
+            <img src="static/images/blog.png" style="width:40px; height:40px;">
+        </div>
+    </div>
+    </div>
+    
 {% endblock %}
